@@ -40,29 +40,31 @@ public class lotteryDraw {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int[] numbers = new int[7];
+        int[] drawnNumbers = new int[7];
         int[] guessNumbers = new int[7];
         int matches = 0;
 
+        // Get guess numbers and drawn numbers
         for (int i = 0; i < 7; i++) {
             int guessNumber = 50;
-            while (guessNumber < 0 && guessNumber > 49) {
+            while (guessNumber < 0 || guessNumber > 49) {
                 System.out.println("Enter guess number " + (i + 1) + ":");
                 guessNumber = input.nextInt();
-                guessNumbers[i] = guessNumber;
             }
-        }
+            guessNumbers[i] = guessNumber;
 
-        generateNumbers();
+            drawnNumbers[i] = draw();
+        }
 
         for (int i = 0; i < 7; i++) {
             for (int j = 0; j < 7; j++) {
-                if (guessNumbers[i] == numbers[j]) {
+                if (guessNumbers[i] == drawnNumbers[j]) {
                     matches += 1;
                 }
             }
         }
 
+        System.out.println("Congratulations, you have won " + winnings(matches) + "!");
         System.out.println("Drawn numbers were: " + Arrays.toString(drawnNumbers));
         System.out.println("Guess numbers were: " + Arrays.toString(guessNumbers));
     }
