@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class lotteryDraw {
     public static void generateNumbers() {
@@ -62,7 +63,7 @@ public class lotteryDraw {
             }
         }
 
-        // System.out.println(numbers);
-        // System.out.println(guessNumbers);
+        System.out.println("Drawn numbers were: " + Arrays.toString(drawnNumbers));
+        System.out.println("Guess numbers were: " + Arrays.toString(guessNumbers));
     }
 }
