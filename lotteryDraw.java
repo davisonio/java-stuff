@@ -2,10 +2,8 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class lotteryDraw {
-    public static void generateNumbers() {
-        for (int i = 0; i < 7; i++) {
-            int randomNumber = (int)(Math.random() * 49 + 0);
-        }
+    public static int draw() {
+        return (int)(Math.random() * 49 + 0);
     }
 
     public static void winnings(int matches) {
