@@ -6,33 +6,35 @@ public class lotteryDraw {
         return (int)(Math.random() * 49 + 0);
     }
 
-    public static void winnings(int matches) {
+    public static int winnings(int matches) {
+        int winnings = 0;
         switch(matches) {
             case 7:
-                System.out.println("You won £1,000,000!");
+                winnings = 1000000;
                 break;
             case 6:
-                System.out.println("You won £100,000!");
+                winnings = 100000;
                 break;
             case 5:
-                System.out.println("You won £10,000!");
+                winnings = 10000;
                 break;
             case 4:
-                System.out.println("You won £1,000!");
+                winnings = 1000;
                 break;
             case 3:
-                System.out.println("You won £100!");
+                winnings = 100;
                 break;
             case 2:
-                System.out.println("You won £10!");
+                winnings = 10;
                 break;
             case 1:
-                System.out.println("You won £1!");
+                winnings = 1;
                 break;
             default:
-                System.out.println("You won absolutely nothing!");
+                winnings = 0;
                 break;
-            }
+        }
+        return winnings;
     }
 
     public static void main(String[] args) {
