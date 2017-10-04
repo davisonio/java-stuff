@@ -1,0 +1,20 @@
+Array
+Zero based, fixed length (static), store of elements of one data type, held in a contiguous block of memory, 1D/2D/3D, accessed using index.
+Two dimensional array
+Similar to a one-dimensional array, but it can be visualised as a grid (or table) with rows and columns.
+Personal data
+It must relate to a living individual and allow that individual to be identified from it.
+Boolean algebra/logic
+The branch of algebra in which the values of the variables are the truth values true and false, usually denoted 1 and 0 respectively.
+Clock speed
+A measure of how many clock cycles a CPU can perform per second.
+Overclocking
+Setting your CPU to run at speeds higher than their official speed grade.
+Core
+The processing unit which receives instructions and performs calculations, or actions, based on those instructions.
+DNS
+Domain Name System. The Internet's system for converting alphabetic (domain) names into numeric IP addresses.
+Circuit switching
+Participants are physically connected and remain so until data exchange is terminated.
+Packet switching
+Mode of data transmission in which a message is broken into a number of parts which are sent independently, over whatever route is optimum for each packet, and reassembled at the destination.
