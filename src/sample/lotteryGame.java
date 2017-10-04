@@ -17,14 +17,14 @@ public class lotteryGame {
             do {
                 winningBall = (int)(Math.random() * 50 + 0);
             } while (winningBall == 0);
-            if (lotteryNumbers[winningBall] == false) {
+            if (!lotteryNumbers[winningBall]) {
                 lotteryNumbers[winningBall] = true;
                 numberOfSelectedBalls = numberOfSelectedBalls + 1;
             }
         }
 
         for (int i = 1; i < 50; i++) {
-            if (lotteryNumbers[i] == true) {
+            if (lotteryNumbers[i]) {
                 bw.write(i);
                 bw.write(" ");
             }

@@ -1,11 +1,12 @@
 package src.sample;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class searchProcedures{
     public static void linearSearch(int[] array, int search, Boolean found){
         int i = 0;
-        while (found == false) {
+        while (!found) {
             i = i + 1;
             if (array[i] == search) {
                 found = true;
@@ -16,7 +17,7 @@ public class searchProcedures{
     public static void binarySearch(int[] array, int search, Boolean found){
         int start = 0;
         int end = array.length -1;
-        while (found == false && start <= end) {
+        while (!found && start <= end) {
             int mid = (start + end) / 2;
             if (array[mid] == search) {
                 found = true;
@@ -39,9 +40,9 @@ public class searchProcedures{
         System.out.println("What type of search?");
         String type = input.nextLine();
         
-        if (type == "linear") {
+        if (Objects.equals(type, "linear")) {
             linearSearch(array, search, found);
-        } else if (type == "binary") {
+        } else if (Objects.equals(type, "binary")) {
             binarySearch(array, search, found);
         }
         

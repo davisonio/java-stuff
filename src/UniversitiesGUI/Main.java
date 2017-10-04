@@ -7,7 +7,7 @@ import java.io.BufferedReader;
 
 public class Main
 {
-    public static ArrayList<University> uniList = new ArrayList<University>();
+    public static ArrayList<University> uniList = new ArrayList<>();
 
     public static void main(String args[]) throws IOException
     {               

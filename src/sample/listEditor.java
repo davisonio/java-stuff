@@ -8,7 +8,7 @@ public class listEditor {
         ArrayList<String> list = new ArrayList<>();
         boolean quit = false;
 
-        while (quit == false) {
+        while (!quit) {
             System.out.println("List Editor - Select a function:");
             System.out.println("1. Add");
             System.out.println("2. Remove");

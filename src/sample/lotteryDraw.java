@@ -9,7 +9,7 @@ public class lotteryDraw {
     }
 
     public static int winnings(int matches) {
-        int winnings = 0;
+        int winnings;
         switch(matches) {
             case 7:
                 winnings = 1000000;

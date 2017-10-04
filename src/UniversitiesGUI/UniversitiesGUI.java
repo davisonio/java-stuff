@@ -26,13 +26,13 @@ public class UniversitiesGUI
     private static TextField txtFieldName;
     private static TextField txtFieldCountry;
     private static ListView<University> uniListView;
-    private static ArrayList<University> uniArrList = new ArrayList<University>();
+    private static ArrayList<University> uniArrList = new ArrayList<>();
     private static University currentlySelectedUniversity = null;
     
     public static void main(String[] args)
     {
         new JFXPanel();
-        Platform.runLater(() -> initGUI());
+        Platform.runLater(UniversitiesGUI::initGUI);
     }
 
     private static void initGUI()
@@ -45,7 +45,7 @@ public class UniversitiesGUI
         stage.setResizable(false);
         stage.setWidth(720);
         stage.setHeight(480);
-        stage.setOnCloseRequest((WindowEvent we) -> terminate(we));
+        stage.setOnCloseRequest(UniversitiesGUI::terminate);
         stage.show();
         
         // Label - Add
@@ -110,7 +110,7 @@ public class UniversitiesGUI
         rootPane.getChildren().add(uniIcon);
         
         // List View
-        uniListView = new ListView<University>();
+        uniListView = new ListView<>();
         uniListView.setLayoutX(400);
         uniListView.setLayoutY(50);
         uniListView.setOnMouseClicked((MouseEvent me) -> currentlySelectedUniversity = uniListView.getSelectionModel().getSelectedItem());

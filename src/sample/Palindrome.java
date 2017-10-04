@@ -9,13 +9,13 @@ public class Palindrome {
         System.out.println("Enter text:");
         String text = input.nextLine();
         
-        String reversedText = "";
+        StringBuilder reversedText = new StringBuilder();
         
         for (int i = (text.length() - 1); i >= 0; i--) {
-            reversedText = reversedText + text.charAt(i);
+            reversedText.append(text.charAt(i));
         }
         
-        if (text.equalsIgnoreCase(reversedText)) {
+        if (text.equalsIgnoreCase(reversedText.toString())) {
             System.out.println("Is a palindrome");
         } else {
             System.out.println("Is not a palindrome");
