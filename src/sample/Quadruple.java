@@ -1,3 +1,5 @@
+package src.sample;
+
 import java.util.Scanner;
 
 public class Quadruple{

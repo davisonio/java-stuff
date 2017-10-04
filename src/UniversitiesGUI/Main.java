@@ -1,4 +1,4 @@
-package UniversitiesGUI;
+package src.UniversitiesGUI;
 
 import java.util.ArrayList;
 import java.io.IOException;

@@ -1,7 +1,9 @@
+package src.sample;
+
 import java.util.Scanner;
 
 public class searchProcedures{
-    public static Boolean linearSearch(int[] array, int search, Boolean found){
+    public static void linearSearch(int[] array, int search, Boolean found){
         int i = 0;
         while (found == false) {
             i = i + 1;
@@ -10,9 +12,8 @@ public class searchProcedures{
                 int foundIndex = array[i];
             }
         }
-        return found;
     }
-    public static Boolean binarySearch(int[] array, int search, Boolean found){
+    public static void binarySearch(int[] array, int search, Boolean found){
         int start = 0;
         int end = array.length -1;
         while (found == false && start <= end) {
@@ -26,7 +27,6 @@ public class searchProcedures{
                 start = mid + 1;
             }
         }
-        return found;
     }
     public static void main(String[] args){
         Boolean found = false;

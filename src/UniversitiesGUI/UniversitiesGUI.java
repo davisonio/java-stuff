@@ -1,4 +1,4 @@
-package UniversitiesGUI;
+package src.UniversitiesGUI;
 
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
@@ -113,9 +113,7 @@ public class UniversitiesGUI
         uniListView = new ListView<University>();
         uniListView.setLayoutX(400);
         uniListView.setLayoutY(50);
-        uniListView.setOnMouseClicked((MouseEvent me) -> {
-            currentlySelectedUniversity = uniListView.getSelectionModel().getSelectedItem();
-        });
+        uniListView.setOnMouseClicked((MouseEvent me) -> currentlySelectedUniversity = uniListView.getSelectionModel().getSelectedItem());
         uniListView.setPrefHeight(100);
         rootPane.getChildren().add(uniListView);
         updateListView();

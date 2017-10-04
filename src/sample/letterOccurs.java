@@ -1,3 +1,5 @@
+package src.sample;
+
 public class letterOccurs {
     public static void main(String[] args) {
         String applecake = "Java apple cake";

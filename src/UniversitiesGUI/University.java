@@ -1,8 +1,8 @@
-package UniversitiesGUI;
+package src.UniversitiesGUI;
 
 public class University    //public keyword means class is available to other classes in this program
 {
-    // These are the attributes (variables that each instance is given a set of), private meaning accesible only within the declared class itself
+    // These are the attributes (variables that each instance is given a set of), private meaning accessible only within the declared class itself
     private int ranking;
     private String name;
     private String country;
