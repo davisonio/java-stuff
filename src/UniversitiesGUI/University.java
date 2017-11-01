@@ -1,4 +1,4 @@
-package src.UniversitiesGUI;
+package UniversitiesGUI;
 
 public class University    //public keyword means class is available to other classes in this program
 {

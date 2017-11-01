@@ -1,4 +1,4 @@
-package src.UniversitiesGUI;
+package UniversitiesGUI;
 
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
