@@ -16,4 +16,8 @@ public abstract class Fish extends Animal {
     public void setFins(int fins) {
         this.fins = fins;
     }
+
+    public void die() {
+        System.out.println("A fish has died.");
+    }
 }
