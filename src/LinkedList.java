@@ -115,5 +115,6 @@ public class LinkedList
         insertAtPosition(0, "weeeeeeeelllll");
         printLinkedList();
 
+        clearLinkedList();
     }
 }
